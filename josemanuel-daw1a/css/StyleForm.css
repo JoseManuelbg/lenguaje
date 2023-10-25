@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-image:url(/img/fondobosque.jpg) ;
+    backdrop-filter: brightness(50%);
+    background-repeat: no-repeat, repeat;
+    background-size:cover;
+    background-position:center ;
+    
+}
+h1{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+label{
+    color: rgba(255, 255, 255, 0.658);
+}
+legend{
+    color: aliceblue;
+}
+input{
+    
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+fieldset{
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+-webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.8);
+-moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.8);
+box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.8);
+}
+#idgeneroh, #idgenerom{
+    width:50px ;
+}
+#DAcademicos{
+    position: relative;
+    width: 350px;
+    left: 50%;
+    top: 720px;
+}
+#ODatos{
+    position: relative;
+    width: 350px;
+    left: 50%;
+    top: 770px;
+}
+form{
+    height: 1050px;
+}
+#btnEntregar{
+    
+    position: absolute;
+    width: 75px;
+    left: 40%;
+    top: 1000px;
+    transform: translate(-50%);
+
+}
+#btnReset{
+       
+    position: absolute;
+    width: 75px;
+    left: 60.5%;
+    top: 1000px;
+    transform: translate(-50%);
+    text-align: center;
+}

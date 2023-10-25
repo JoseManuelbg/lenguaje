@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/StyleForm.css">
+</head>
+<body>
+    <div class="bg-image"></div>
+    <h1>Matriculación</h1>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="idnombre">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="idapellidos">
+            <label for="dni">DNI:</label>
+            <input type="text" name="dni" id="iddni">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="datetime" name="fechaNacimiento" id="idcumple">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="idemail">
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" id="iddireccion">
+            <label for="genero">Genero:</label>
+            <input  type="radio" name="genero" id="idgeneroh">
+            <label for="idgeneroh">Hombre</label>
+            <input type="radio" name="genero" id="idgenerom">
+            <label for="idgenerom">Mujer</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Academicos</legend>
+            <label for="centro"></label>
+            <input type="text" id="centro">
+            <label for="mod">Modulo</label>
+            <select name="modulo">
+                <option value="daw" selected>Desarrollo de aplicaciones web</option>
+                <option value="dam">Desarrollo de aplicaciones multimedia</option>
+                <option value="asir">Administracion de sistemas informatico y redes</option>
+                <option value="teleco">Telecomunicaciones</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <label for="cc">Cuenta Corriente</label>
+            <input type="text" id="cc">
+            <label for="m4">Modelo 4c</label>
+            <input type="text" id="m4">
+            <label for="archivo">Introduce un archivo importante</label>
+            <input type="file" name="archivo" id="">
+        </fieldset>
+        <input type="submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

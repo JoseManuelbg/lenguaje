@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de mi horario</title>
+    <style>
+        body{
+            background: #4B79A1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin: 0;
+            
+        }
+        table {
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+           -webkit-box-shadow: -19px 21px 11px 0px rgba(0,0,0,0.75);
+           -moz-box-shadow: -19px 21px 11px 0px rgba(0,0,0,0.75);
+           box-shadow: -19px 21px 11px 0px rgba(0,0,0,0.75);
+           
+           
+           
+        }
+        table, tr, td ,th{
+            
+            border-collapse: collapse;
+            
+            
+        }
+        tr, td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align:center;
+            
+        }
+        th{
+            background-color: #065A82;
+        }
+        tr, td{
+            background-color: #1C7293;
+        }
+        .recreo{
+            background-color: #9EB3C2;
+        }
+       p{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        
+       }
+      
+
+    </style>
+</head>
+<body>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="200 0 500 500" width="800px" id="blobSvg" style="opacity: 1;" filter="blur(0px)" >
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: rgb(153, 193, 241);"></stop>
+            <stop offset="100%" style="stop-color: rgb(26, 95, 180);"></stop>
+          </linearGradient>
+        </defs>
+        <path id="blob" fill="url(#gradient)" style="opacity: 1;">
+          <animate attributeName="d" dur="9800ms" repeatCount="indefinite" values="M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z;M392.2525,331.53996Q379.05994,413.07992,285.7525,456.15485Q192.44505,499.22978,100.80019,432.44731Q9.15533,365.66484,30.81018,260.57493Q52.46503,155.48501,121.45005,74.10764Q190.43506,-7.26974,268.13261,60.97003Q345.83016,129.2098,375.63761,189.6049Q405.44505,250,392.2525,331.53996Z;M384.02639,318.52969Q359.04619,387.05939,278.02474,435.01815Q197.0033,482.97691,137.94391,408.01485Q78.88453,333.05279,75.91422,249.0132Q72.94391,164.97361,138.46041,107.43731Q203.97691,49.90102,276.0132,88.41917Q348.04949,126.93731,378.52804,188.46866Q409.0066,250,384.02639,318.52969Z;M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z"></animate>
+        </path>
+
+    <table>
+        <!--Lunes-->
+        <tr>
+            <th>Hora/Dia</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <th>8:00-9:00</th>
+            <td>FOL</td>
+            <td rowspan="2">FOL</td>
+            <td rowspan="2">Entorno de Desarrollo</td>
+            <td rowspan="2">Programación</td>
+            <td rowspan="2">Sistemas</td>
+        </tr>
+        <tr>
+            <th>9:00-10:00</th>
+            <td>Entorno de Desarrollo</td>
+            
+        </tr>
+        <tr>
+            <th>10:00-11:00</th>
+            <td>Programación</td>
+            <td>Sistemas</td>
+            <td>Programación</td>
+            <td>Bases de datos</td>
+            <td>Lenguajes</td>
+        </tr>
+        <tr>
+            <th>11:00-11:30</th>
+            <td class="recreo" colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <th>11:30-12:30</th>
+            <td>Programación</td>
+            <td>Sistemas</td>
+            <td>Programación</td>
+            <td>Bases de Datos</td>
+            <td>Lenguajes de Marcas</td>
+        </tr>
+        <tr>
+            <th>12:30-13:30</th>
+            <td rowspan="2">Bases de datos</td>
+            <td rowspan="2">Lenguajes de Marcas</td>
+            <td rowspan="2">Bases de Datos</td>
+            <td rowspan="2">Sistemas</td>
+           <td rowspan="2">Programación</td>
+        </tr>
+        <tr>
+            <th>13:30-14:30</th>
+      
+        </tr>
+    </table>
+    <p><a href="/index.html">Volver</a></p>
+</body>
+</html>
