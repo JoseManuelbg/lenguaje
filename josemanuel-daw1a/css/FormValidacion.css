@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: rgb(26, 55, 78);
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    box-shadow: 0px 0px 10px 5px black;
+    
+}
+fieldset{
+    width: auto;
+    height: 550px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(240, 248, 255, 0.8);
+}
+input  {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing:border-box;
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 20px;
+    
+}
+input:focus{
+    outline: none;
+}
+input[type=submit]{
+    background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  width: 100px;
+  
+}
+
+input[type=reset]{
+    background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100px;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 18px;
+  } 
+
+  .sub:hover {
+    animation: changeColor   linear  0.4s forwards;
+    color:black;
+  background:linear-gradient(to top,white, #04AA6D  ) bottom right/ 100% 600% ;
+ 
+  }
+.res:hover {
+    animation: changeColor   linear  0.4s forwards;
+    color:black;
+  background:linear-gradient(to top,white, #ff5c5c  ) bottom right/ 100% 600% ;
+ 
+  }
+  @keyframes changeColor {
+   
+    to  {  background-position: top left;
+     }
+   }
+.volver{
+    position: absolute;
+    box-sizing: border-box;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
