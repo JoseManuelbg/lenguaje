@@ -1,0 +1,76 @@
+html{
+font-family: 'Comic Neue';
+font-size: 18px;
+}
+.cabecera {
+    background-color: grey;
+    text-align: center;
+    border: 5px solid pink;
+}
+
+.main {
+    box-sizing: border-box;
+    background-color: cadetblue;
+    text-align: center;
+    border: 10px solid black;
+    float: left;
+    width: 60%;
+
+    padding: 10px;
+
+}
+
+.articulo1{
+    
+    overflow: auto;
+    border: 10px solid red;
+
+}
+
+.articulo2 {
+    border: 10px solid greenyellow;
+
+}
+
+.articulo1, .articulo2{
+    box-sizing: border-box;
+
+    width: 50%;
+    float: left;
+    overflow: auto;
+}
+
+.articulo3 {
+    border: 10px solid yellow;
+
+}
+
+.articulo4 {
+    border: 10px solid blue;
+}
+
+.articulo3, .articulo4{
+    overflow: auto;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+}
+
+.anuncios {
+    width: 40%;
+    height: 315px;
+    box-sizing: border-box;
+    background-color: grey;
+    border: 5px solid skyblue;
+    float: right;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.pie {
+    clear: both;
+    background-color: grey;
+    border: 5px solid green;
+    text-align: center;
+}
