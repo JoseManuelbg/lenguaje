@@ -1,0 +1,152 @@
+@font-face{
+    font-family: "HelveticaNeueLTPro-MdEx";
+    src: url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.eot");
+    src: url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.svg#HelveticaNeueLTPro-MdEx")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+/*^ Optimizacion de la carga de la funte de letras*/
+
+* {
+    margin: 0;
+    
+}
+
+/* Para WebKit (Chrome y Safari) */
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Para Firefox */
+  html {
+    scrollbar-width: none;
+  }
+  
+  
+html {
+    background-color: black;
+}
+
+.header {
+    color: #FBFAF5;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+
+.titleandsub {
+    position: relative;
+    font-family: "HelveticaNeueLTPro-MdEx";
+    height: 220px;
+    width: 400px;
+    border: 5px solid wheat;
+    border-right: none;
+    border-top: 5px solid;
+    border-image: linear-gradient(to left, transparent 50%, #FBFAF5 80%) 0.5;
+    margin-top: 400px;
+    margin-left: 100px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    animation: borderAnimation 2s ease-out;
+}
+
+@keyframes borderAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.title {
+    box-sizing: border-box;
+    font-size: 60px;
+    overflow: hidden;
+    opacity: 0; /* Inicialmente establece la opacidad en 0 */
+    animation: fadeIn 3s forwards; 
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    font-family: "HelveticaNeueLTPro-MdEx";
+    font-size: 15px;
+    opacity: 0; /* Inicialmente establece la opacidad en 0 */
+    animation: fadeIn 3s forwards; 
+    animation-delay: 2s;
+}
+
+.name{
+   
+    margin-right: auto;
+    margin-left: 15px;    
+    font-family: "HelveticaNeueLTPro-MdEx";
+    font-size: 30px;
+    
+}
+
+.name a{
+    text-decoration: none;
+    color: #FBFAF5;
+}
+
+.name a:hover{
+    color: #ecff00;
+}   
+
+.NavBar  {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 85px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.enlaces-nav{
+    text-decoration: none;
+    color: #FBFAF5;
+    font-family: "HelveticaNeueLTPro-MdEx";
+
+}
+.enlaces-nav:hover{
+    color: #ecff00;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin-right: 10px;
+}
+
+.practicas{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+}
+
+.practicas a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    
+}
