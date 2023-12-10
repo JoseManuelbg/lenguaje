@@ -28,21 +28,22 @@ html::-webkit-scrollbar {
   }
   
   
-html {
-    background-color: black;
-}
+
 
 .header {
+    position: relative;
     color: #FBFAF5;
     text-align: center;
     width: 100%;
-    height: 70vh;
-    border-bottom: 2px solid red;
+    height: 100vh;
+    border-bottom: 2px solid ;
     box-sizing: border-box;
+    background-color: #000000;
+
 }
 
 .titleandsub {
-    position: relative;
+    position: absolute;
     font-family: "HelveticaNeueLTPro-MdEx";
     height: 220px;
     width: 400px;
@@ -105,18 +106,19 @@ html {
 }
 
 .name a:hover{
-    color: #ecff00;
+    color: #FFEE32;
 }   
 
 .NavBar  {
-    background-color: black;
-    position: fixed;
+    background-color: #000000;
+    position: sticky;
     width: 100%;
     top: 0;
     height: 85px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 999999;
     
 }
 .enlaces-nav{
@@ -126,7 +128,7 @@ html {
 
 }
 .enlaces-nav:hover{
-    color: #ecff00;
+    color: #FFEE32;
 }
 ul{
     list-style: none;
@@ -137,17 +139,101 @@ ul{
     margin-right: 10px;
 }
 
+
+/** Practicas **/
+
 .practicas{
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 10px;
+  position: relative;
+  background-color: #ffffff;
+  background-color: #17171A;
+  height: 1000px;
 }
 
 .practicas a{
     text-decoration: none;
     color: white;
+    
     font-size: 40px;
     
 }
+.practica{
+    position: absolute;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.zero{
+    margin-top: 200px;
+    margin-left: 100px;
+    border: 5px solid white;
+    border-right: none;
+    border-top: 5px solid;
+    
+    border-image: linear-gradient(to left, transparent 50%, #fefefe 80%) 0.5;
+    color: white;
+}
+.one{
+    position: absolute;
+    display: block;
+    margin-left: 1250px;
+    margin-top: 400px;
+    border: 5px solid wheat;
+    border-left: none;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, transparent 50%, #FBFAF5 80%) 0.5;
+    color: #FBFAF5;
+    text-align: right;
+}
 
+.two{
+    margin-top: 600px;
+    margin-left: 100px;
+    border: 5px solid wheat;
+    border-right: none;
+    border-top: 5px solid;
+    border-image: linear-gradient(to left, transparent 50%, #FBFAF5 80%) 0.5;
+    color: #FBFAF5;
+}
+
+.three{
+    position: absolute;
+    display: block;
+    margin-left: 1250px;
+    margin-top: 800px;
+    border: 5px solid wheat;
+    border-left: none;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, transparent 50%, #FBFAF5 80%) 0.5;
+    color: #FBFAF5;
+    text-align: right;
+}
+
+
+/**About**/
+
+.about{
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background-color: #2c2c2c;
+}
+
+.about img{
+    width: 500px;
+    float: right;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-top: 120px;
+}
+.about p{
+    color: #FBFAF5;
+    font-family: "HelveticaNeueLTPro-MdEx";
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    font-size: 20px;
+    top:250px;
+    left:100px ;
+    
+}
