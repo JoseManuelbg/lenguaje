@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<lenguajes>
+
+      <lenguaje>
+      
+      <nombre>Python</nombre>
+      <valoracion>13.58%</valoracion>
+      <enero24>3</enero24>
+      <enero25>1</enero25>
+      <cambio>+1.86%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>C</nombre>
+      <valoracion>12.44%</valoracion>
+      <enero24>1</enero24>
+      <enero25>2</enero25>
+      <cambio>-4.94%</cambio>
+
+          </lenguaje>
+
+      <lenguaje>
+      
+      <nombre>Java</nombre>
+      <valoracion>10.66%</valoracion>
+      <enero24>2</enero24>
+      <enero25>3</enero25>
+      <cambio>-1.30%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>C++</nombre>
+      <valoracion>8.29%</valoracion>
+      <enero24>4</enero24>
+      <enero25>4</enero25>
+      <cambio>+0.73%</cambio>
+
+          </lenguaje>
+          
+      <lenguaje>
+      
+      <nombre>C#</nombre>
+      <valoracion>5.58%</valoracion>
+      <enero24>5</enero24>
+      <enero25>5</enero25>
+      <cambio>+1.73%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>Visual Basic</nombre>
+      <valoracion>4.74%</valoracion>
+      <enero24>6</enero24>
+      <enero25>6</enero25>
+      <cambio>+0.90%</cambio>
+
+          </lenguaje>
+
+      <lenguaje>
+      
+      <nombre>JavaScript</nombre>
+      <valoracion>2.09%</valoracion>
+      <enero24>7</enero24>
+      <enero25>7</enero25>
+      <cambio>-0.11%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>Código Ensamblador</nombre>
+      <valoracion>1.85%</valoracion>
+      <enero24>11</enero24>
+      <enero25>8</enero25>
+      <cambio>+0.21%</cambio>
+
+          </lenguaje>
+          
+      <lenguaje>
+      
+      <nombre>SQL</nombre>
+      <valoracion>1.80%</valoracion>
+      <enero24>12</enero24>
+      <enero25>9</enero25>
+      <cambio>+0.19%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>Swift</nombre>
+      <valoracion>1.41%</valoracion>
+      <enero24>13</enero24>
+      <enero25>10</enero25>
+      <cambio>-0.02%</cambio>
+
+          </lenguaje>
+
+      <lenguaje>
+      
+      <nombre>PHP</nombre>
+      <valoracion>1.40%</valoracion>
+      <enero24>8</enero24>
+      <enero25>11</enero25>
+      <cambio>-0.60%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>R</nombre>
+      <valoracion>1.25%</valoracion>
+      <enero24>9</enero24>
+      <enero25>12</enero25>
+      <cambio>-0.65%</cambio>
+
+          </lenguaje>
+          
+      <lenguaje>
+      
+      <nombre>Go</nombre>
+      <valoracion>1.04%</valoracion>
+      <enero24>14</enero24>
+      <enero25>13</enero25>
+      <cambio>-0.37%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>Pascal</nombre>
+      <valoracion>0.99%</valoracion>
+      <enero24>19</enero24>
+      <enero25>14</enero25>
+      <cambio>+0.20%</cambio>
+
+          </lenguaje>
+
+      <lenguaje>
+      
+      <nombre>Classic Visual Basic</nombre>
+      <valoracion>0.98%</valoracion>
+      <enero24>20</enero24>
+      <enero25>15</enero25>
+      <cambio>+0.19%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>MATLAB</nombre>
+      <valoracion>0.96%</valoracion>
+      <enero24>16</enero24>
+      <enero25>16</enero25>
+      <cambio>-0.19%</cambio>
+
+          </lenguaje>
+          
+      <lenguaje>
+          
+      <nombre>Groovy</nombre>
+      <valoracion>0.94%</valoracion>
+      <enero24>10</enero24>
+      <enero25>17</enero25>
+      <cambio>-0.90%</cambio>
+
+          </lenguaje>
+          
+      <lenguaje>
+      
+      <nombre>Ruby</nombre>
+      <valoracion>0.88%</valoracion>
+      <enero24>15</enero24>
+      <enero25>18</enero25>
+      <cambio>-0.43%</cambio>
+
+      </lenguaje>
+
+      <lenguaje>
+          
+      <nombre>Fortran</nombre>
+      <valoracion>0.77%</valoracion>
+      <enero24>30</enero24>
+      <enero25>19</enero25>
+      <cambio>+0.31%</cambio>
+
+          </lenguaje>
+
+      <lenguaje>
+      
+      <nombre>Perl</nombre>
+      <valoracion>0.71%</valoracion>
+      <enero24>17</enero24>
+      <enero25>20</enero25>
+      <cambio>-0.31%</cambio>
+
+      </lenguaje>
+
+</lenguajes>

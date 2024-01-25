@@ -1,0 +1,32 @@
+.formulario {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 10px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid black;
+  width: 100%;
+  margin: 10px;
+}
+
+label {
+  float: left;
+  color: #555;
+}

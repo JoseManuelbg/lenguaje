@@ -36,7 +36,6 @@ html::-webkit-scrollbar {
     text-align: center;
     width: 100%;
     height: 100vh;
-    border-bottom: 2px solid ;
     box-sizing: border-box;
     background-color: #000000;
 
@@ -143,6 +142,7 @@ ul{
 /** Practicas **/
 
 .practicas{
+    overflow: hidden;
   position: relative;
   background-color: #ffffff;
   background-color: #17171A;
@@ -172,6 +172,9 @@ ul{
     
     border-image: linear-gradient(to left, transparent 50%, #fefefe 80%) 0.5;
     color: white;
+}
+.zero a:hover, .one a:hover, .two a:hover, .three a:hover{
+    color: #FFEE32;
 }
 .one{
     position: absolute;

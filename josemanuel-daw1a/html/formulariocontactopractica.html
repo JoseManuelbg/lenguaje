@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/formulariocontactopracticacss.css" />
+</head>
+
+<body>
+    <div class="formulario">
+        <h2>Contacto</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Informacion del Usuario</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombreid" required />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="emailid" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Motivo del mensaje</legend>
+                <select name="motivo" id="motivoid" required>
+                    <option value="consulta">Consulta</option>
+                    <option value="comentario">Comentario</option>
+                    <option value="soporte">Soporte Tecnico</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Mensaje</legend>
+                <textarea name="mensaje" id="idmensaje" cols="30" rows="10" required>
+Escriba su mensaje aqui...</textarea>
+            </fieldset>
+            <input type="submit" value="Enviar" />
+        </form>
+    </div>
+</body>
+
+</html>
