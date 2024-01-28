@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE persona[
+<!ELEMENT persona (dni, nombre, apellido, fechanacimiento, ciudad, lateralidad)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT  apellido (#PCDATA)>
+<!ELEMENT  fechanacimiento (dia,mes,anyo)>
+<!ELEMENT  dia (#PCDATA)>
+<!ELEMENT  mes (#PCDATA)>
+<!ELEMENT  anyo (#PCDATA)>
+
+<!ELEMENT  ciudad (#PCDATA)>
+<!ELEMENT  lateralidad EMPTY>
+
+]>
+
+
+<persona>
+
+    <dni></dni>
+    <nombre></nombre>
+    <apellido></apellido>
+    <fechanacimiento>
+    <dia></dia>
+    <mes></mes>
+    <anyo></anyo>
+    </fechanacimiento>
+    <ciudad></ciudad>
+  <lateralidad/>
+</persona>

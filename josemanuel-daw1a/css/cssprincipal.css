@@ -1,3 +1,4 @@
+/* Carga de fuente personalizada */
 @font-face{
     font-family: "HelveticaNeueLTPro-MdEx";
     src: url("https://db.onlinewebfonts.com/t/38546bc849fdb1f9cc43d675576d5f8a.eot");
@@ -9,27 +10,24 @@
     font-weight:normal;
     font-style:normal;
     font-display:swap;
+    font-family: 'Oswald', sans-serif; /* Asegúrate de que la propiedad 'font-family' esté al final de la declaración */
 }
-/*^ Optimizacion de la carga de la funte de letras*/
 
+/* Reset de márgenes a 0 */
 * {
     margin: 0;
-    
 }
 
-/* Para WebKit (Chrome y Safari) */
+/* Oculta la barra de desplazamiento en WebKit y Firefox */
 html::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Para Firefox */
-  html {
+}
+
+html {
     scrollbar-width: none;
-  }
-  
-  
+}
 
-
+/* Estilos para la cabecera */
 .header {
     position: relative;
     color: #FBFAF5;
@@ -38,7 +36,6 @@ html::-webkit-scrollbar {
     height: 100vh;
     box-sizing: border-box;
     background-color: #000000;
-
 }
 
 .titleandsub {
@@ -90,13 +87,12 @@ html::-webkit-scrollbar {
     animation-delay: 2s;
 }
 
+/* Estilos para el nombre en la barra de navegación */
 .name{
-   
     margin-right: auto;
     margin-left: 15px;    
     font-family: "HelveticaNeueLTPro-MdEx";
     font-size: 30px;
-    
 }
 
 .name a{
@@ -108,6 +104,7 @@ html::-webkit-scrollbar {
     color: #FFEE32;
 }   
 
+/* Estilos para la barra de navegación */
 .NavBar  {
     background-color: #000000;
     position: sticky;
@@ -118,17 +115,18 @@ html::-webkit-scrollbar {
     justify-content: flex-end;
     align-items: center;
     z-index: 999999;
-    
 }
+
 .enlaces-nav{
     text-decoration: none;
     color: #FBFAF5;
     font-family: "HelveticaNeueLTPro-MdEx";
-
 }
+
 .enlaces-nav:hover{
     color: #FFEE32;
 }
+
 ul{
     list-style: none;
     text-decoration: none;
@@ -138,85 +136,105 @@ ul{
     margin-right: 10px;
 }
 
+/* Estilos generales para las prácticas */
 
-/** Practicas **/
+#prac{
+    height: 1000px;
+}
 
-.practicas{
+
+
+.practicas {
     overflow: hidden;
-  position: relative;
-  background-color: #ffffff;
-  background-color: #17171A;
-  height: 1000px;
+    position: relative;
+    background-color: #17171A;
 }
 
-.practicas a{
-    text-decoration: none;
-    color: white;
-    
-    font-size: 40px;
-    
-}
-.practica{
-    position: absolute;
-    display: block;
-    padding: 10px;
+/* Estilos para cada práctica */
+.practica {
     box-sizing: border-box;
-    
-}
-.zero{
-    margin-top: 200px;
-    margin-left: 100px;
+    width: 50%;
+    margin: 10px;
+    float: left;
     border: 5px solid white;
-    border-right: none;
-    border-top: 5px solid;
-    
     border-image: linear-gradient(to left, transparent 50%, #fefefe 80%) 0.5;
     color: white;
+    padding: 10px;
+    position: relative;
+    margin-top: 100px;
 }
-.zero a:hover, .one a:hover, .two a:hover, .three a:hover{
-    color: #FFEE32;
+
+/* Estilos para prácticas impares */
+.practica:nth-child(odd) {
+    float: right;
+    clear: both; 
+    padding-left: 35%;
+    margin-left: 500px;
+    width: 50%;
+    border: 5px solid white;
+    border-image: linear-gradient(to right, transparent 50%, #fefefe 80%) 0.5;
+    color: white;
 }
-.one{
+
+/* Estilos para prácticas pares */
+.practica:nth-child(even) {
+    float: left;
+    clear: both; 
+}
+
+.practica a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+}
+
+/* Efecto de crecimiento al hacer hover */
+.practica:hover {
+    
+    width: 110%;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+/* Estilos para descripción de prácticas impares */
+.practica:nth-child(odd) .descripcion-practica {
     position: absolute;
-    display: block;
-    margin-left: 1250px;
-    margin-top: 400px;
-    border: 5px solid wheat;
-    border-left: none;
-    border-top: 5px solid;
-    border-image: linear-gradient(to right, transparent 50%, #FBFAF5 80%) 0.5;
-    color: #FBFAF5;
-    text-align: right;
+    width: 250px;
+    height: 75px;
+    opacity: 0; /* Inicialmente, la descripción está oculta */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+    top: 0; /* Ajusta la posición vertical de la descripción */
+    left: 1250px; /* Ajusta la posición horizontal de la descripción */
+    box-sizing: border-box;
 }
 
-.two{
-    margin-top: 600px;
-    margin-left: 100px;
-    border: 5px solid wheat;
-    border-right: none;
-    border-top: 5px solid;
-    border-image: linear-gradient(to left, transparent 50%, #FBFAF5 80%) 0.5;
-    color: #FBFAF5;
-}
-
-.three{
+/* Estilos para descripción de prácticas pares */
+.practica:nth-child(even) .descripcion-practica {
     position: absolute;
-    display: block;
-    margin-left: 1250px;
-    margin-top: 800px;
-    border: 5px solid wheat;
-    border-left: none;
-    border-top: 5px solid;
-    border-image: linear-gradient(to right, transparent 50%, #FBFAF5 80%) 0.5;
-    color: #FBFAF5;
-    text-align: right;
+    width: 250px;
+    height: 75px;
+    opacity: 0; /* Inicialmente, la descripción está oculta */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+    top: 0; /* Ajusta la posición vertical de la descripción */
+    left: 500px; /* Ajusta la posición horizontal de la descripción */
+    box-sizing: border-box;
 }
 
+/* Mostrar descripción al hacer hover */
+.practica:hover .descripcion-practica {
+    opacity: 1;
+}
 
-/**About**/
+/* Clearfix para el contenedor de prácticas */
+.practicas:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+/* Estilos para la sección "About" */
 .about{
-    height: 800px;
+    height: 1000px;
     overflow: hidden;
     position: relative;
     background-color: #2c2c2c;
@@ -227,16 +245,36 @@ ul{
     float: right;
     margin-bottom: 100px;
     margin-right: 150px;
-    margin-top: 120px;
+    margin-top: 300px;
 }
+
 .about p{
     color: #FBFAF5;
-    font-family: "HelveticaNeueLTPro-MdEx";
+    font-family:'Oswald', sans-serif;    
     position: absolute;
-    width: 500px;
-    height: 250px;
-    font-size: 20px;
-    top:250px;
+    width: 640px;
+    font-size: 25px;
+    top:450px;
     left:100px ;
-    
+    box-sizing: border-box;
+}
+
+.about span{
+    color: #FFEE32;
+    font-family: "HelveticaNeueLTPro-MdEx";
+}
+
+.about span:hover{
+    font-size: 30px; /* Ajusta el valor según lo que desees */
+    transition: font-size 0.3s ease;
+    overflow: hidden;
+}
+
+/* Flecha en la sección "About" */
+#flecha{
+    position: absolute;
+    transform: rotate(230deg);
+    width: 400px;
+    top: -300px;
+    left: 500px;
 }
