@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gimnasio [
+  <!ELEMENT gimnasio (sala+)>
+  <!ELEMENT sala (nombre, dia, reserva*)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT dia (#PCDATA)>
+  <!ELEMENT reserva (#PCDATA)>
+]>
+<gimnasio>
+  <sala>
+    <nombre>Sala 3</nombre>
+    <dia>23</dia>
+    <reserva>Fran</reserva>
+    <reserva>Fran</reserva>
+    <reserva>Fran</reserva>
+    <reserva>Fran</reserva>
+  </sala>
+  <sala>
+    <nombre>Sala 4</nombre>
+    <dia>23</dia>
+  </sala>
+  <sala>
+    <nombre>Sala 5</nombre>
+    <dia>23</dia>
+    <reserva>Fran</reserva>
+  </sala>
+</gimnasio>
