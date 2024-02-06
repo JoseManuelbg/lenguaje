@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<monumentos>
+
+<monumento>
+  <nombre>Patenon</nombre>
+  <anyo>447 aC</anyo>
+  <ciudad>Atenas</ciudad>
+  <estilo>Helenistico</estilo>
+  <pais>Grecia</pais>
+</monumento>
+
+<monumento>
+  <nombre>Coliseo</nombre>
+  <anyo>80 dC</anyo>
+  <ciudad>Roma</ciudad>
+  <estilo>Toscano</estilo>
+  <pais>Italia</pais>
+</monumento>
+
+<monumento>
+  <nombre>Alhambra</nombre>
+  <anyo>975</anyo>
+  <ciudad>Granada</ciudad>
+  <estilo>Nazari</estilo>
+  <pais>Espania</pais>
+</monumento>
+
+<monumento>
+  <nombre>Giralda</nombre>
+  <anyo>1172</anyo>
+  <ciudad>Sevilla</ciudad>
+  <estilo>Almohade</estilo>
+  <pais>Espania</pais>
+</monumento>
+
+<monumento>
+  <nombre>Torre Eiffel</nombre>
+  <anyo>1889</anyo>
+  <ciudad>Paris</ciudad>
+  <estilo>Modernista</estilo>
+  <pais>Francia</pais>
+</monumento>
+
+<monumento>
+  <nombre>Guggenheim</nombre>
+  <anyo>1997</anyo>
+  <ciudad>Bilbao</ciudad>
+  <estilo>Contemporaneo</estilo>
+  <pais>Espania</pais>
+</monumento>
+
+</monumentos>

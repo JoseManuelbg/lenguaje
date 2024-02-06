@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE monumentos [
+<!ELEMENT monumentos (monumento*)>
+  <!ELEMENT monumento (nombre, anyo, ciudad, estilo)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT anyo (#PCDATA)>
+  <!ELEMENT ciudad (#PCDATA)>
+  <!ATTLIST ciudad pais CDATA "Espania">
+  <!ELEMENT estilo (#PCDATA)>
+]>
+
+<monumentos>
+
+<monumento>
+  <nombre>Patenon</nombre>
+  <anyo>447 aC</anyo>
+  <ciudad pais="Grecia">Atenas</ciudad>
+  <estilo>Helenistico</estilo>
+</monumento>
+
+<monumento>
+  <nombre>Coliseo</nombre>
+  <anyo>80 dC</anyo>
+  <ciudad pais="Italia">Roma</ciudad>
+  <estilo>Toscano</estilo>
+</monumento>
+
+<monumento>
+  <nombre>Alhambra</nombre>
+  <anyo>975</anyo>
+  <ciudad pais="Espania">Granada</ciudad>
+  <estilo>Nazari</estilo>
+</monumento>
+
+<monumento>
+  <nombre>Giralda</nombre>
+  <anyo>1172</anyo>
+  <ciudad pais="Espania">Sevilla</ciudad>
+  <estilo>Almohade</estilo>
+</monumento>
+
+<monumento>
+  <nombre>Torre Eiffel</nombre>
+  <anyo>1889</anyo>
+  <ciudad pais="Francia">Paris</ciudad>
+  <estilo>Modernista</estilo>
+</monumento>
+
+<monumento>
+  <nombre>Guggenheim</nombre>
+  <anyo>1997</anyo>
+  <ciudad pais="Espania">Bilbao</ciudad>
+  <estilo>Contemporaneo</estilo>
+</monumento>
+
+</monumentos>
