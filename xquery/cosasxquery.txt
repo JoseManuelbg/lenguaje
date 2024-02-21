@@ -1,0 +1,64 @@
+A corregir -- Tiene que estar formateado
+
+(: Consultar todos los libros cuyo precio sea menor a $15:)
+
+for $consulta in doc("libreriadb/libreria.xml")//libro
+
+where $consulta/precio < 15.00
+
+return $consulta/titulo/text()
+----------------------------------------------------------------------------------
+(: Consultar todos los libros escritos por un autor de un pais especifico, por ejemplo Nueva Zelanda:)
+
+for $consulta in doc("libreria/libreria.xml")//libro
+
+where $consulta//pais = "New Zealand"
+
+return $consulta/titulo/text()
+----------------------------------------------------------------------------
+(: Consultar el autor del libro con titulo "Noise":)
+
+for $consulta in doc("libreria/libreria.xml")//libro
+
+where $consulta//titulo = "Noise"
+
+return concat("El autor del libro es ",$consulta/autor/nombre/text())
+--------------------------------------------------------------------------
+(:"Obtener el nombre del autor del libro con ISBN "570704634-8"":)
+
+for $consulta in doc("libreria/libreria.xml")//libro
+
+where $consulta/ISBN = "570704634-8"
+
+return $consulta
+-------------------------------------------------------------------------
+(:Libros en reservado y de romance:)
+
+for $consulta in doc("libreria/libreria.xml")//libro
+
+where $consulta/@reservado = "true" and $consulta/tematica = "romance"
+
+order by $consulta/titulo
+return $consulta/titulo/text()
+--------------------------------------------------------------------------
+(:Consultar el titulo del libro con menor precio:)
+
+let $consulta := doc("libreria/libreria.xml")//libro
+let $preciominimo := min($consulta/precio)
+
+for $var in doc("libreria/libreria.xml")//libro
+
+where $var/precio = $preciominimo
+return $var
+
+-------------------------------------------------------------------------------------
+(:1) Mostrar la lista de los medicamentos recetados y el precio de los mismos recetados a los pacientes que necesitan tratamiento de Traumatología :)
+
+for $medico in doc("Hospital/medicos.xml")//medico[especialidad="Traumatologia"]
+
+let $nombre_recetados := doc("Hospital/medicamentos.xml")//receta[@codigoPaciente = $medico//historial_clinico/@codigoPaciente]/nombre
+
+let $precio_recetados := doc("Hospital/medicamentos.xml")//receta[@codigoPaciente = $medico//historial_clinico/@codigoPaciente]/precio
+
+return ($nombre_recetados, $precio_recetados)/text()
+

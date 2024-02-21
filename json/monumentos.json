@@ -1,0 +1,17 @@
+{"monumentos":[
+
+    {"nombre":"Pantenon", "anyo":"447 aC", "ciudad":"Atenas","estilo":"Helenistico", "pais":"Grecia"},
+
+    {"nombre":"Coliseo", "anyo":"80 dC", "ciudad":"Roma","estilo":"Toscano", "pais":"Italia"},
+
+    {"nombre":"Alhambra", "anyo":"975", "ciudad":"Granada","estilo":"Nazari", "pais":"Espania"},
+
+    {"nombre":"Giralda", "anyo":"1172", "ciudad":"Sevilla","estilo":"Almohade", "pais":"Espania"},
+
+    {"nombre":"Torre Eiffel", "anyo":"1889", "ciudad":"Paris","estilo":"Modernista", "pais":"Francia"},
+
+    {"nombre":"Guggenheim", "anyo":"1997", "ciudad":"Bilbao","estilo":"Contemporaneo", "pais":"Espania"}
+
+
+]}
+
