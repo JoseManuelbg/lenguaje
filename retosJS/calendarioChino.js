@@ -14,7 +14,7 @@ whatYear(2007);
 //Case Rata
 whatYear(1972);
 //Case Buey
-whatYear(1997);
+whatYear(607);
 //Case Tigre
 whatYear(1986);
 //Case Conejo
@@ -27,43 +27,17 @@ whatYear(1977);
 whatYear(2026);
 //Case Oveja
 whatYear(1979);
+
+//COn fecha completa
+
+let ejemplo = new Date("1995-12-25");
+whatYear(ejemplo.getFullYear())
+
 function whatYear(year){
-    switch(year%12){
-        case 0:
-            console.log("Mono");
-            break;
-        case 1:
-            console.log("Gallo");
-            break;
-        case 2:
-            console.log("Perro");
-            break;
-        case 3:
-            console.log("Cerdo");
-            break;
-        case 4:
-            console.log("Rata");
-            break;
-        case 5:
-            console.log("Buey");
-            break;
-        case 6:
-            console.log("Tigre");
-            break;
-        case 7:
-            console.log("Conejo");
-            break;
-        case 8:
-            console.log("Dragon");
-            break;
-        case 9:
-            console.log("Serpiente");
-            break;
-        case 10:
-            console.log("Caballo");
-            break;
-        case 11:
-            console.log("Oveja");
-            break;
-    };
+    let animales = ["Mono", "Gallo", "Perro", "Cerdo", "Rata", "Buey", "Tigre", "Conejo", "Dragon", "Serpiente", "Caballo", "Oveja" ]; 
+    if(year < 1924){
+        console.log("Año invalido")
+    }else{
+    console.log (animales[year%12]);
+    }
 }
