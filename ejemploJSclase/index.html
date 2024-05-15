@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    
+    <form onsubmit="return validaFormulario()" >
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="passwd">Contra</label>
+        <input type="password" name="passwd" id="passwd">
+
+        <select name="desp" id="desp">
+            <option value="desp" selected></option>
+            <option value="desp">Opcion 1</option>
+            <option value="desp">Opcion 2</option>
+            <option value="desp">Opcion 3</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="errores" class="error-message"></div>
+
+</body>
+</html>
